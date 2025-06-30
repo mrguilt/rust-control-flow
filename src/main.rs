@@ -31,4 +31,43 @@ fn main() {
     let newnumber=if (number%2!=0) {"Odd"} else {"Even"};
     println!("The value is {newnumber}");
 
+    println!("\n## Loops");
+    println!("\n### Basic Loops");
+    //As per the book...mostly. It's an infinite loop, so I'm commenting it out after I run it once.
+    //loop {
+    //    println!("GOTO 10!");
+    //}
+
+    //Let's try it with a break statement
+    let mut counter=0;
+
+    let result=loop {
+        counter+=1;
+    //    println!("Counter: {counter}");   //I wanted to see what was going on. Noising when I run it. 
+
+        if counter==10 {
+            break counter*2;
+        }
+    };
+
+    println!("The result is {result}");
+
+    println!("\nLoop with a Label");
+    counter=0;
+    'counting_up: loop {
+        println!("Counter={counter}");
+        let mut remaining=10;
+        loop {
+            println!("\tRemaining={remaining}");
+            if remaining==9 {
+                break;
+            }
+            if counter==2 {
+                break 'counting_up;
+            }
+            remaining -=1;
+        }
+        counter+=1;
+    }
+
 }
