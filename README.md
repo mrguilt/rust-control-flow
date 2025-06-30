@@ -9,3 +9,8 @@
 ## Loops
 
 * Loop Lables are a single quote ('), not a backtick (`).
+
+## General
+
+* There must not be a decriment (--) or increment (++) operator in Rust.
+* How does one concantonate a string? I suppose I'll first have to learn about strings. 

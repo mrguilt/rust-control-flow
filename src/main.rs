@@ -70,4 +70,12 @@ fn main() {
         counter+=1;
     }
 
+    println!("\n### while Loops");
+    counter=3;
+    while counter!=0 {
+        println!("while Counter={counter}");
+        counter-=1; //decriment operator (--) isn't a thing in Rust, apparently.
+    }
+    println!("\t\tLIFTOFF!");
+
 }
