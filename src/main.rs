@@ -78,4 +78,18 @@ fn main() {
     }
     println!("\t\tLIFTOFF!");
 
+    println!("\n### for Loops");
+    let a=[10,20,30,40,50];
+    println!("\n#### Elements in an array");
+    for element in a {
+        println!("The value is: {element}");
+    }
+    println!("\n#### Cycle through numbers");
+    for number in (1..4) {
+        println!("Number is {number}");
+    }
+    println!("\n#### Putting it Together");
+    for number in (0..5).rev() {
+        println!("{} element is {}",number,a[number]);
+    }
 }
